@@ -1,4 +1,4 @@
-// Question : Comment gérer efficacement le cache avec Redis ?
+// Question  : Comment gérer efficacement le cache avec Redis ?
 // Réponse :
 // Question: Quelles sont les bonnes pratiques pour les clés Redis ?
 // Réponse :

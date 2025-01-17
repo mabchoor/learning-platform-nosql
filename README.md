@@ -51,27 +51,25 @@ npm install
 
 Create a .env file in the root of the project and add the following environment variables:
 
-plaintext
-Copy
-Edit
+```plaintext
 MONGODB_URI=mongodb://localhost:27017
 MONGODB_DB_NAME=learning_platform
 REDIS_URI=redis://localhost:6379
 PORT=3000
+```
 
 ## 4️⃣ Start the Server
 
 Run the following command to start the server:
 
-bash
-Copy
-Edit
+```bash
 npm start
 Now, the API will be available at http://localhost:3000! 🎉
-
+```
 ## 🛠️ API Endpoints
 
 ### Courses 📘
+```plaintext
 
 GET /courses: Retrieve all courses.
 POST /courses: Create a new course.
@@ -79,8 +77,9 @@ GET /courses/:id: Get details of a course by ID.
 PUT /courses/:id: Update a course by ID.
 DELETE /courses/:id: Delete a course by ID.
 GET /courses/stats: Get course statistics (e.g., total number of courses, total duration, etc.).
-
+```
 ### Students 🧑‍🎓
+```plaintext
 
 GET /students: Retrieve all students.
 POST /students: Add a new student.
@@ -89,11 +88,12 @@ PUT /students/:id: Update student information.
 DELETE /students/:id: Delete a student.
 POST /students/:id/enroll: Enroll a student in a course.
 GET /students/:id/courses: Retrieve courses that a student is enrolled in.
-
+```
 ## 🔧 Project Structure
 
 Here's an overview of how the project is structured:
 
+```plaintext
 src/
 ├── config/ # Configuration files (DB, Redis)
 │ ├── dbConfig.js # MongoDB connection config
@@ -109,15 +109,16 @@ src/
 │ └── studentService.js # Student service
 ├── app.js # Main application entry point
 └── .env # Environment variables
-
+```
 ## 🔥 Technologies Used
+```plaintext
 
 Node.js: JavaScript runtime used for server-side development.
 Express.js: Web framework to handle HTTP requests and routing.
 MongoDB: NoSQL database for storing courses and students.
 Redis: In-memory data store used for caching.
 Mongoose: ODM to interact with MongoDB.
-
+```
 ## Réponses aux questions
 
 ### Comment gérer efficacement le cache avec Redis ? 🤔
